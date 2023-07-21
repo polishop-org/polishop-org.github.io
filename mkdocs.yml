@@ -49,8 +49,8 @@ markdown_extensions:
 
 nav:
   - Home: "index.md"
-  - Testes de Software:
-      - "Testes/Visão Geral.md"
+  - Handbook Linha de Comando: "handbook/linha-de-comando.md"
+  - Handbook Github Desktop: "handbook/desktop.md"
 
 extra_css:
   - ASCII_cinema/asciinema-player.css
