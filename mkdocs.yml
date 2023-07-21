@@ -1,0 +1,60 @@
+site_name: Polishop Docs
+site_url: https://polishop-org.github.io/
+site_author: Arthur Olga, Filipe Borba
+site_description: >-
+  Repositório com documentações e materiais da Polishop
+
+repo_name: Polishop-docs
+repo_url: https://github.com/polishop-org/polishop-org.github.io
+edit_uri: "tree/main/docs"
+
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  logo: https://i.imgur.com/sXcTAfD.png
+
+  features:
+    - navigation.extend
+  palette:
+    # Light mode
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: red
+      accent: light red
+      toggle:
+        icon: octicons/moon-16
+        name: Switch to dark mode
+
+    # Dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: red
+      accent: light red
+      toggle:
+        icon: octicons/sun-16
+        name: Switch to light mode
+
+  icon:
+    repo: fontawesome/brands/github-alt
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - footnotes
+
+nav:
+  - Home: "index.md"
+  - Testes de Software:
+      - "Testes/Visão Geral.md"
+
+extra_css:
+  - ASCII_cinema/asciinema-player.css
+  - _css/extra_css.css
+extra_javascript:
+  - ASCII_cinema/asciinema-player.js
+  - _js/extra_js.js
