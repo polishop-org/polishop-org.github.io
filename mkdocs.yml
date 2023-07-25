@@ -40,17 +40,22 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
-  - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.highlight
-  - pymdownx.superfences
   - pymdownx.snippets
   - footnotes
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Home: "index.md"
-  - Handbook Linha de Comando: "handbook/linha-de-comando"
-  - Handbook Github Desktop: "handbook/desktop"
+  - Handbooks:
+      - Handbook Linha de Comando: "handbook/linha-de-comando"
+      - Handbook Github Desktop: "handbook/desktop"
+  - Branches: "branches"
 
 extra_css:
   - ASCII_cinema/asciinema-player.css
@@ -58,3 +63,7 @@ extra_css:
 extra_javascript:
   - ASCII_cinema/asciinema-player.js
   - _js/extra_js.js
+
+plugins:
+  - search
+  - mermaid2

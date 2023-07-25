@@ -1,6 +1,6 @@
 # Github Handbook - Utilizando GitHub Desktop
 
-Este Handbook tem o intuito de juntar as principais informações do GitHub para o dia-a-dia. As funções mais complexas são absorvidas no material completo.
+Este Handbook tem o intuito de juntar as principais informações do GitHub Desktop para o dia-a-dia. As funções mais complexas são absorvidas no material completo.
 
 Aqui algumas referências que podem te ajudar!
 
@@ -8,69 +8,50 @@ Aqui algumas referências que podem te ajudar!
 
 ### GUIA RÁPIDO -> GIT & GITHUB
 
-### Instalando Git
+### Instalando GitHub Desktop
 
-- [https://git-scm.com/download](https://git-scm.com/download)
+- [https://desktop.github.com/](https://desktop.github.com/)
 
 ---
 
 ### Obtenha um repositório
 
-    <!-- crie uma cópia de trabalho em um repositório local executando o comando -->
-     - git clone /caminho/para/o/repositório
+Para clonar um repositório:
 
-    <!-- quando usar um servidor remoto, seu comando será -->
-    - git clone usuário@servidor:/caminho/para/o/repositório
+1. No GitHub Desktop, clique em "File" -> "Clone Repository".
+2. No campo "URL", digite o URL do repositório que deseja clonar.
+3. Clique em "Clone".
 
 ---
 
 ### Adicionando Arquivos:
 
-     <!-- adiciona todos os arquivos alterados e criados -->
-     - git add .
+Para fazer commit de alterações:
 
-     <!-- registra a alteração -->
-     - git commit -m "comentários das alterações"
+1. Faça as alterações nos arquivos na sua pasta local do repositório.
+2. No GitHub Desktop, os arquivos alterados serão listados.
+3. Adicione um resumo e uma descrição para o commit.
+4. Clique em "Commit to main" (se estiver na branch main).
 
 Obs: Git é o sistema de versionamento de arquivos; Github é o repositório online para guardar estes arquivos.
-O comando "git commit" garante o versionamento, mas NÃO garante que os arquivos estão no Github.
+O "commit" no GitHub Desktop garante o versionamento, mas NÃO garante que os arquivos estão no Github.
 
 ### Fazendo upload dos arquivos:
 
-    <!-- Faz upload na main -->
-     - git push
+1. Depois de fazer um commit, clique em "Push Origin" para enviar os commits para o repositório remoto.
 
 ---
 
 ### Ramificando (trabalhando com branches):
 
-    <!-- Quando você está trabalhando em equipe e mais de uma pessoa altera o mesmo projeto, é recomendável que cada alteração tenha sua própria Branch -->
-
-    <!-- Branches ("ramos") são utilizados para desenvolver funcionalidades isoladas umas das outras. O branch main é o branch "padrão" quando você cria um repositório. Use outros branches para desenvolver e mescle-os (merge) ao branch main após a conclusão. -->
-
-    <!-- crie um novo branch chamado "funcionalidade_x" e selecione-o usando -->
-     - git checkout -b funcionalidade_x
-
-     <!-- retorne para o main usando -->
-     - git checkout main
-
-     <!-- remova o branch da seguinte forma -->
-     - git branch -d funcionalidade_x
-
-     <!-- um branch não está disponível a outros a menos que você envie o branch para seu repositório remoto -->
-      - git push origin <funcionalidade_x>
+1. Para criar um novo branch, clique em "Current branch" -> "New branch" e digite o nome da nova branch.
+2. Para alternar entre branches, clique em "Current branch" e selecione a branch que deseja.
+3. Para deletar uma branch, clique em "Current branch" -> "Delete branch".
+4. Para enviar a nova branch para o repositório remoto, clique em "Publish branch".
 
 ### Atualizar e mesclar (merge):
 
-     <!-- para atualizar seu repositório local com a mais nova versão, execute de dentro da pasta do projeto -->
-     - git pull
-
-     <!-- sincronize sua pasta de trabalho para obter e fazer merge (mesclar) alterações remotas.
-        para fazer merge de um outro branch ao seu branch ativo (ex. main), use -->
-     - git merge <branch>
-
-     <!-- em ambos os casos o git tenta fazer o merge das alterações automaticamente. Infelizmente, isto nem sempre é possível e resulta em conflitos. Você é responsável por fazer o merge desses conflitos manualmente editando os arquivos exibidos pelo git. Depois de alterar, clique em "Mark as resolved" -->
-      - git add <arquivo>
-
-      <!-- antes de fazer o merge das alterações, você pode também pré-visualizá-las usando -->
-     - git diff <branch origem> <branch destino>
+1. Para atualizar o seu repositório local para a versão mais recente, clique em "Fetch Origin". Se houver novos commits no repositório remoto, clique em "Pull Origin".
+2. Para fazer o merge de uma branch para a branch ativa, vá para a branch que você deseja fazer o merge, clique em "Branch" -> "Merge into Current Branch" e selecione a branch que você deseja mesclar.
+3. Se houver conflitos, você terá que resolvê-los manualmente nos arquivos afetados. Depois de resolver os conflitos, faça um commit das alterações.
+4. Para visualizar as diferenças entre duas branches, selecione a branch que deseja comparar no menu "Current branch".
