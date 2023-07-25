@@ -44,11 +44,7 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.snippets
   - footnotes
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
 
 nav:
   - Home: "index.md"
@@ -63,7 +59,3 @@ extra_css:
 extra_javascript:
   - ASCII_cinema/asciinema-player.js
   - _js/extra_js.js
-
-plugins:
-  - search
-  - mermaid2
