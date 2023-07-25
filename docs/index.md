@@ -6,5 +6,5 @@ O objetivo deste site é servir como um hub de informações para os desenvolved
 
 ## Handbooks - Guias rápidos
 
-- [Handbook Linha de Comando](https://polishop-org.github.io/docs/Handbook/linha-de-comando)
-- [Handbook Desktop](https://polishop-org.github.io/docs/Handbook/desktop)
+- [Handbook Linha de Comando](https://polishop-org.github.io/handbook/linha-de-comando)
+- [Handbook Desktop](https://polishop-org.github.io/handbook/desktop)
